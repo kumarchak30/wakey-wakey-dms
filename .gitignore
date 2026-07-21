@@ -1,0 +1,5 @@
+drowsy_env/
+yolov8n.pt
+.DS_Store
+__pycache__/
+*.pyc
