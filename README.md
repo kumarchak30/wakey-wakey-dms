@@ -28,11 +28,11 @@ reopen, all alerts stop automatically.
 
 ## Hardware Components
 
-- Arduino Uno — main controller, receives serial signal from Python
-- Breadboard — circuit assembly
-- Piezo Buzzer — audio alert, pulsed at 2500 Hz
-- LED (Red) — visual alert indicator
-- Resistor (220Ω) — current limiting for LED
-- Jumper Wires (x5) — electrical connections
-- USB Cable — power and serial communication
-- Logitech C270 Webcam — camera input
+- **Arduino Uno** — main controller, receives serial signal from Python
+- **Breadboard** — circuit assembly
+- **Piezo Buzzer** — audio alert, pulsed at 2500 Hz
+- **LED** — visual alert indicator
+- **Resistor (220Ω)** — current limiting for LED
+- **Jumper Wires (x5)** — electrical connections
+- **USB Cable** — power and serial communication
+- **Logitech C270 Webcam** — camera input
