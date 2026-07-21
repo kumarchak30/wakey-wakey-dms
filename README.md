@@ -17,3 +17,22 @@ eyes on every frame. When the EAR drops below a personalized threshold and
 stays there for 5 seconds, Python sends a signal over USB serial to an Arduino 
 Uno, which triggers a pulsed piezo buzzer and an LED. When the driver's eyes 
 reopen, all alerts stop automatically.
+
+## Tech Stack
+
+- **Python** — core detection and serial communication logic
+- **MediaPipe Face Mesh** — real-time 468-point facial landmark detection
+- **OpenCV** — webcam feed and frame rendering
+- **PySerial** — serial communication between Python and Arduino
+- **Arduino (C++)** — hardware alert control (buzzer + LED)
+
+## Hardware Components
+
+- Arduino Uno — main controller, receives serial signal from Python
+- Breadboard — circuit assembly
+- Piezo Buzzer — audio alert, pulsed at 2500 Hz
+- LED (Red) — visual alert indicator
+- Resistor (220Ω) — current limiting for LED
+- Jumper Wires (x5) — electrical connections
+- USB Cable — power and serial communication
+- Logitech C270 Webcam — camera input
