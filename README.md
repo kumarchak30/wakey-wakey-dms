@@ -84,3 +84,37 @@ python arm.py
 
 Keep your eyes open during the **3 second calibration window**, then detection starts.
 
+---
+
+## Known Limitations
+
+- Struggles in low-light or nighttime conditions
+- Requires a stable mounting position — vibration affects detection accuracy
+- Currently laptop-dependent (no standalone embedded solution)
+- Adhesive mounting may weaken in high vehicle interior temperatures
+
+---
+
+## Future Improvements
+
+- Infrared camera support for nighttime detection
+- More secure suction or clip-based mounting system
+- Compact standalone hardware (Raspberry Pi)
+- Head pose detection as an additional distraction signal
+
+---
+
+## Team
+
+Built for EGN2020C — Introduction to Engineering, Spring 2026 at the University of Florida.
+
+**Kumar Chakraborty, Randy Hin, Braden Ross, Rachel Morris, Boaz St. Omer**
+
+Professor Sarah Jayasekaran
+
+---
+
+## License
+
+MIT
+
