@@ -36,3 +36,51 @@ reopen, all alerts stop automatically.
 - **Jumper Wires (x5)** — electrical connections
 - **USB Cable** — power and serial communication
 - **Logitech C270 Webcam** — camera input
+
+## Wiring
+- Arduino Pin 13 → 220Ω resistor → LED (+) → LED (-) → GND
+- Arduino Pin 8  → Buzzer (+)
+- GND            → Buzzer (-)
+
+## Setup
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/kumarchak30/wakey-wakey.git
+cd wakey-wakey
+```
+
+### 2. Create and activate a virtual environment
+```bash
+python3 -m venv drowsy_env
+source drowsy_env/bin/activate   # Mac/Linux
+drowsy_env\Scripts\activate      # Windows
+```
+
+### 3. Install dependencies
+```bash
+pip install mediapipe==0.10.5 opencv-python pyserial
+```
+
+### 4. Upload the Arduino sketch
+- Open `/arduino/wakey_wakey.ino` in Arduino IDE
+- Upload to your Arduino Uno
+
+### 5. Find your Arduino's port
+```bash
+ls /dev/cu.*        # Mac
+python -m serial.tools.list_ports  # Windows
+```
+
+### 6. Update the port in `arm.py`
+```python
+arduino = serial.Serial('/dev/cu.usbmodem2102', 9600, timeout=1)
+```
+
+### 7. Run the system
+```bash
+python arm.py
+```
+
+Keep your eyes open during the **3 second calibration window**, then detection starts.
+
